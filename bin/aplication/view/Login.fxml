@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="txtUsuario" prefHeight="413.0" prefWidth="382.0" stylesheets="@../LauraStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lbBienvenido" layoutX="54.0" layoutY="14.0" prefHeight="43.0" prefWidth="274.0" stylesheets="@../LauraStyles.css" text="BIENVENIDO AL JUEGO " />
+      <ImageView fitHeight="107.0" fitWidth="135.0" layoutX="126.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbUsuario" layoutX="24.0" layoutY="176.0" prefHeight="36.0" prefWidth="114.0" style="-fx-label-padding: #16B55C;" stylesheets="@../LauraStyles.css" text="Usuario: " />
+      <Label fx:id="lbContrasena" layoutX="18.0" layoutY="230.0" prefHeight="36.0" prefWidth="114.0" stylesheets="@../LauraStyles.css" text="Contraseña:" />
+      <TextField fx:id="txtUsuario" layoutX="135.0" layoutY="175.0" prefHeight="36.0" prefWidth="190.0" promptText="Ingresa tu usuario">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtContraseña" layoutX="135.0" layoutY="225.0" prefHeight="36.0" prefWidth="190.0" promptText="Ingresa tu contraseña">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="lblCrearCuenta" layoutX="24.0" layoutY="361.0" text="¿No tienes una cuenta? Click Aquí  !" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button fx:id="btnIniciarSesion" layoutX="18.0" layoutY="288.0" mnemonicParsing="false" onAction="#IniciarSesionAction" prefHeight="43.0" prefWidth="228.0" text="Inicia Sesion Para Jugar ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <RadioButton fx:id="rbtClasico" layoutX="277.0" layoutY="269.0" mnemonicParsing="false" onAction="#elergirModoClasicoAction" prefHeight="36.0" prefWidth="92.0" text="Clasico" />
+      <RadioButton fx:id="rbtDuelo" layoutX="276.0" layoutY="305.0" mnemonicParsing="false" onAction="#elegirModoDueloAction" prefHeight="36.0" prefWidth="92.0" text="Duelo" />
+   </children>
+</AnchorPane>

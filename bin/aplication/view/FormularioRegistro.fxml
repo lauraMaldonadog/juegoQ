@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="405.0" prefWidth="448.0" stylesheets="@../LauraStylesFormularioRegistro.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label fx:id="lbRegistrate" layoutX="174.0" layoutY="28.0" prefHeight="51.0" prefWidth="234.0" text="¡REGISTRATE AQUI!" />
+      <Label layoutX="22.0" layoutY="108.0" prefHeight="35.0" prefWidth="106.0" text="Nombre:" />
+      <Label layoutX="22.0" layoutY="155.0" prefHeight="35.0" prefWidth="106.0" text="Usuario: " />
+      <Label layoutX="22.0" layoutY="240.0" prefHeight="35.0" prefWidth="106.0" text="Contraseña:" />
+      <Label layoutX="22.0" layoutY="199.0" prefHeight="35.0" prefWidth="106.0" text="Correo:" />
+      <Button fx:id="btnRegistrarme" layoutX="38.0" layoutY="309.0" mnemonicParsing="false" onAction="#registrarAction" prefHeight="59.0" prefWidth="153.0" text="Registrarme " />
+      <TextField layoutX="174.0" layoutY="113.0" prefHeight="30.0" prefWidth="217.0" promptText="Ingresa tu nombre" />
+      <TextField layoutX="174.0" layoutY="158.0" prefHeight="30.0" prefWidth="217.0" promptText="Ingresa tu usuario" />
+      <TextField layoutX="174.0" layoutY="202.0" prefHeight="30.0" prefWidth="217.0" promptText="Ingresa tu correo " />
+      <TextField layoutX="174.0" layoutY="243.0" prefHeight="30.0" prefWidth="217.0" promptText="Ingresa tu contraseña" />
+      <Button fx:id="btnCancelar" layoutX="238.0" layoutY="320.0" mnemonicParsing="false" onAction="#cancelarAction" prefHeight="35.0" prefWidth="153.0" text="Cancelar" />
+      <ImageView fitHeight="85.0" fitWidth="97.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
